@@ -42,10 +42,14 @@ function postTemplate(post) {
 
 <div class="card-content">
 
-<h3 class="card-title">${post.username}</h3>
+<div class="card-header">${post.username}<br>
+${post.createdAt}
+
+</div>
+
+<br>
 </div>
 <p class="card-description">${post.text}</p>
-<p>${post.createdAt}</p>
 </div>
 </div>`
   element.innerHTML += postTemplate;

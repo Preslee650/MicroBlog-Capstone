@@ -32,7 +32,7 @@ function ProfileFilter() {
   let loginData = getLoginData();
 
   let usernameEndPoint = loginData.username;
-  
+
   myHeaders.append("accept", "application/json");
   myHeaders.append("Content-Type", "application/json");
   myHeaders.append("Authorization", "Bearer " + loginData.token);
@@ -48,13 +48,14 @@ function ProfileFilter() {
     requestOptions
   )
     .then((response) => {
+      // if the response status is ok it returns the response in JSON format. 
+      // If the response is not ok, it throws an error with the response status text.
       if (!response.ok) {
         throw Error(response.statusText);
       }
       return response.json();
     })
     .then((result) => {
-      // let filteredPosts = result.filter((post) => post.username === "usernameEndPoint");
       // sorting the time of the results
       result.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
       //for loop to loop through all the posts

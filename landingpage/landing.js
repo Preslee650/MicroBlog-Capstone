@@ -1,9 +1,10 @@
 /* Landing Page JavaScript */
 
 "use strict";
-
+// grabs first element with "login" id
 const loginForm = document.querySelector("#login");
 
+// function is capturing users input in login text boxes
 loginForm.onsubmit = function (event) {
     // Prevent the form from refreshing the page,
     // as it will do by default when the Submit event is triggered:
@@ -15,7 +16,6 @@ loginForm.onsubmit = function (event) {
         username: loginForm.username.value,
         password: loginForm.password.value,
     }
-
 
     // Disables the button after the form has been submitted already:
     loginForm.loginButton.disabled = true;

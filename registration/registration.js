@@ -23,7 +23,7 @@ function CreateUser() {
     .then((data) => {
       alert("Registered successfully");
       
-      // sends you to index page
+      // sends you to index/login page
       window.location.href = "/landingpage/index.html";
     })
     .catch((error) => console.log("error", error));
