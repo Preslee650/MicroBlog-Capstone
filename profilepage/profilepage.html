@@ -33,18 +33,19 @@
   <body>
     <div>
       <!--Nav Bar -->
-      <nav>
-        <h2 class="Title">MicroBlog</h2>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="/registration/registration.html">Registration</a></li>
-          <li><a href="/landingpage/index.html">Login</a></li>
-          <li><a href="/posts/index.html">Post</a></li>
-          <li><a href="/profilepage/profilepage.html">Profile</a></li>
-          <li><button class="logoutbtn" onclick='logout()'>Logout</button></li>
-        </ul>
-      </nav>
-    </div>
+      <div>
+        <nav>
+          <h2 class="Title">Profile Page</h2>
+          <ul>
+            <li><a href="/homepage/index.html">Home</a></li>
+            <li><a href="/registration/registration.html">Registration</a></li>
+            <li><a href="/landingpage/index.html">Login</a></li>
+            <li><a href="/posts/index.html">Post</a></li>
+            <li><a href="/profilepage/profilepage.html">Profile</a></li>
+            <button onclick="logout()" id="logoutButton">Logout</button>
+          </ul>
+        </nav>
+      </div>
 
     <main>
       <!-- text box -->
@@ -53,9 +54,11 @@
       <button class="postbtn" onclick="CreatePost()" id="postButton">Create Post</button> <br>
       
       <!-- Display post here -->
+      <div class="post-container"> 
       <div class="container">
       <p id="displayProfilePostHere"></p>
       </div>
+      </div> <br>
 
     </main>
 
