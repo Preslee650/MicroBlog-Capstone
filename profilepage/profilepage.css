@@ -1,0 +1,86 @@
+/* nav bar */
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+  .Title {
+	color: rgb(255, 255, 255);
+	font-size: 30px;
+	padding: 10px 20px;
+  }
+  nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px 20px;
+  }
+  nav ul li a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-weight: bold;
+  }
+  .logoutbtn {
+	background-color: Transparent;
+    background-repeat:no-repeat;
+	margin: none;
+	padding: none;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+	color: white;
+	font-weight: bold;
+  }
+  a {
+	color: rgb(10, 148, 203);
+  }
+  
+  body {
+	background-color: black;
+	color: rgb(10, 148, 203);
+  }
+
+  /*Post Bar */
+input[type=text] {
+	width: 45%;
+	resize: none;
+}
+#capturePost {
+	margin-left: 25%;
+	margin-right: 15px;
+	margin-top: 25px;
+	padding: 12px 20px;
+}
+/* Create Post Button */
+.postbtn {
+	background-color: rgb(10, 148, 203); 
+	color: black; 
+	border-radius: 8px;
+	border: none;
+	margin: 4px 2px;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+  }
+  
+  .postbtn:hover {
+	background-color: rgb(10, 148, 203);
+	color: white;
+  }
+
+/* Post cards */ 
+.card {
+	width: 600px;
+	border-color: black;
+	margin-top: 15px;
+}
+
+.card-header {
+	font-weight: bold;
+}
+.card-body {
+	color:black;
+}
+.container {
+	display: flex;
+	justify-content: center;
+}
