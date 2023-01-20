@@ -15,5 +15,5 @@ displays 2000 post of all users based off a card template in our post.js file an
 only displays post from the user thats currently logged in. Does this by filtering by username. Sorts by date.
 <img width="1440" alt="Screen Shot 2023-01-20 at 12 27 41 AM" src="https://user-images.githubusercontent.com/116032312/213651111-91f11d09-357b-4193-99d0-e1a1571950df.png">
 
-This function showed me how powerful api's are to where you can not only get data from it but add to the data as well using a post request. I can see how this would be useful if the api has users accounts and you want to add new data like: how long they've been on the page, what items they've purchased the most, etc.
+This function showed me how powerful api's are to where you can not only get data from it but add to the data as well using a post request. I can see how this would be useful if the api has users accounts and you want to add new data like: new address, new credit card info, etc.
 <img width="1440" alt="Screen Shot 2023-01-20 at 12 29 33 AM" src="https://user-images.githubusercontent.com/116032312/213651121-e51878eb-e520-4a09-b22d-bbae68c79ca6.png">
