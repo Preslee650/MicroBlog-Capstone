@@ -44,7 +44,7 @@ function ProfileFilter() {
   };
   // The fetch post only finds the posts from the username that is logged in. This is the filter
   fetch(
-    "https://microbloglite.herokuapp.com/api/posts?limit=2000&offset=0&username=" + usernameEndPoint,
+    "https://microbloglite.herokuapp.com/api/posts?limit=500&offset=0&username=" + usernameEndPoint,
     requestOptions
   )
     .then((response) => {

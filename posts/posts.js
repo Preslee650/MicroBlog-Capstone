@@ -22,7 +22,7 @@ function DisplayAllPost() {
   //This code is making a fetch request to the specified url with the given requestOptions.
   
   fetch(
-    "https://microbloglite.herokuapp.com/api/posts?limit=2000&offset=0",
+    "https://microbloglite.herokuapp.com/api/posts?limit=500&offset=0",
     requestOptions
   )
     .then((response) => response.json())
