@@ -28,6 +28,7 @@ function DisplayAllPost() {
     .then((response) => response.json())
     .then((result) => {
       result.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+      // grabbing individual strings and joining into 1 string
       document.getElementById("post").innerHTML = result.map(postTemplate).join(" ")
   
   })
